@@ -1,8 +1,6 @@
 const prompt = require("prompt-sync")();
 const target = Math.round(Math.random() * 100)
 
-console.log(target)
-
 let luck = 0
 
 while(true) {
@@ -18,6 +16,8 @@ while(true) {
         console.log("Wise guess.")
         break
     }
+
+    continue
 }
 
 console.log("Caught the luck by", luck, "tries!")
